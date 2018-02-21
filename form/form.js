@@ -9,4 +9,8 @@ s.selectmenu("refresh");
 var markup = '<div ...>';
 $(markup).appendTo("form").trigger("create");
 
+$(document).bind("mobileinit", function(){
+  $.mobile.page.prototype.options.keepNative = '.native';
+});
+
 
